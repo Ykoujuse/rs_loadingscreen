@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS 加载动画</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            cursor: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <video autoplay muted loop id="bgVideo">
+                <source src="assets/background.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="server-info">
+            <h1>Rsheng</h1>
+        </div>
+
+        <div class="loading-container">
+            <div class="loading-bar">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="loading-text">
+                <span id="loadingText">加载中...</span>
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+
+        <div class="tips">
+            <p id="tipText">提示：完成任务可以快速升级噢</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://qm.qq.com/example" target="_blank" class="social-icon">QQ</a>
+            <a href="https://kook.vip/example" target="_blank" class="social-icon">KOOK</a>
+        </div>
+    </div>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="assets/music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="volume-control">
+        <button id="muteButton">🎵</button>
+        <div class="volume-slider-container">
+            <input type="range" id="volumeSlider" min="0" max="100" value="30" class="volume-slider">
+        </div>
+    </div>
+
+    <script src="mouse.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
