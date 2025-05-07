@@ -1,4 +1,3 @@
-shared_script '@fiveguard/shared_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5'
 author "Rsheng-QQ:3391407547"
@@ -9,7 +8,7 @@ files {
     'html/style.css',
     'html/mouse.js',
     'html/script.js',
-    'html/assets/**/*'
+    'html/assets/**'
 }
 
 loadscreen 'html/index.html'
